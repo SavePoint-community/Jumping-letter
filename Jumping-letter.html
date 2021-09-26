@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        font-family: helvetica, arial, sans-serif;
+        background-color: #2e2e31;
+    }
+    .word span {
+        color :#d9524a;
+        display: inline-block;
+        font-size: 100px;
+}
+.word span.active {
+	animation: shrinkjump 1s ease-in-out;
+	transform-origin: bottom center;
+}
+@keyframes shrinkjump {
+	10%, 35% {transform: scale(2, .2) translate(0, 0);}
+	45%, 50% {transform: scale(1) translate(0, -150px);}
+	80% {transform: scale(1) translate(0, 0)}
+}
+
+</style>
+<body>
+    
+<div class="word">
+	<span class="active">A</span>
+	
+</div>
+
+</body>
+</html>
